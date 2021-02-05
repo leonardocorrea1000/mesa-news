@@ -15,4 +15,26 @@ class LoginVC: UIViewController {
         myView = LoginView()
         view = myView
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupButtons()
+    }
+    
+    private func setupButtons() {
+        myView.loginButton.onTouch = loginButtonTapped
+    }
+    
+}
+
+// MARK: Actions
+extension LoginVC {
+    private func loginButtonTapped() {
+        myView.loginButton.inLoading = true
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
+            self?.myView.loginButton.inLoading = false
+        }
+        
+    }
 }

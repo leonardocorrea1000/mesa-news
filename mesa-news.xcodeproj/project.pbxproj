@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		763BD9A425CB85C2000359B1 /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763BD9A325CB85C2000359B1 /* DefaultButton.swift */; };
 		7675B24C25AD339700364932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7675B24B25AD339700364932 /* AppDelegate.swift */; };
 		7675B25525AD339800364932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7675B25425AD339800364932 /* Assets.xcassets */; };
 		7675B25825AD339800364932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7675B25625AD339800364932 /* LaunchScreen.storyboard */; };
@@ -25,9 +26,12 @@
 		769B298225AE9221000E4FE1 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B298125AE9221000E4FE1 /* NewsService.swift */; };
 		769B298525AE9272000E4FE1 /* APIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B298425AE9272000E4FE1 /* APIBase.swift */; };
 		769B298825AE92EA000E4FE1 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B298725AE92EA000E4FE1 /* LoginService.swift */; };
+		76D01CB525CCD5F000F28E22 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D01CB425CCD5F000F28E22 /* ViewExtensions.swift */; };
+		76D01CB825CCDAA700F28E22 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D01CB725CCDAA700F28E22 /* UIButtonExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		763BD9A325CB85C2000359B1 /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
 		7675B24825AD339700364932 /* mesa-news.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mesa-news.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7675B24B25AD339700364932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7675B25425AD339800364932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		769B298125AE9221000E4FE1 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 		769B298425AE9272000E4FE1 /* APIBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBase.swift; sourceTree = "<group>"; };
 		769B298725AE92EA000E4FE1 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		76D01CB425CCD5F000F28E22 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		76D01CB725CCDAA700F28E22 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		763BD9A125CB8566000359B1 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				763BD9A325CB85C2000359B1 /* DefaultButton.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		7675B23F25AD339700364932 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +110,7 @@
 		7675B26725AD3AA800364932 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				763BD9A125CB8566000359B1 /* components */,
 				7675B27325AD3C4700364932 /* signup */,
 				7675B26825AD3AAE00364932 /* login */,
 				769B297225AE912B000E4FE1 /* newsList */,
@@ -153,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				769B296C25AE83AF000E4FE1 /* UIColorExtensions.swift */,
+				76D01CB425CCD5F000F28E22 /* ViewExtensions.swift */,
+				76D01CB725CCDAA700F28E22 /* UIButtonExtensions.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -240,14 +257,17 @@
 				769B297825AE918B000E4FE1 /* NewsListView.swift in Sources */,
 				769B297025AE83D2000E4FE1 /* Colors.swift in Sources */,
 				7675B27825AD3C6B00364932 /* SignupView.swift in Sources */,
+				76D01CB525CCD5F000F28E22 /* ViewExtensions.swift in Sources */,
 				7675B28125AD3F7D00364932 /* ViewCodeProtocol.swift in Sources */,
 				7675B27125AD3B3A00364932 /* LoginViewModel.swift in Sources */,
 				7675B27525AD3C5D00364932 /* SignupVC.swift in Sources */,
+				763BD9A425CB85C2000359B1 /* DefaultButton.swift in Sources */,
 				769B298825AE92EA000E4FE1 /* LoginService.swift in Sources */,
 				7675B27B25AD3C7400364932 /* SignupViewModel.swift in Sources */,
 				769B298525AE9272000E4FE1 /* APIBase.swift in Sources */,
 				7675B26E25AD3B2C00364932 /* LoginView.swift in Sources */,
 				769B297F25AE91A4000E4FE1 /* NewsListViewModel.swift in Sources */,
+				76D01CB825CCDAA700F28E22 /* UIButtonExtensions.swift in Sources */,
 				769B298225AE9221000E4FE1 /* NewsService.swift in Sources */,
 				7675B26A25AD3AC000364932 /* LoginVC.swift in Sources */,
 				7675B24C25AD339700364932 /* AppDelegate.swift in Sources */,

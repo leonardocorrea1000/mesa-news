@@ -36,13 +36,11 @@ class LoginView: UIView, ViewCodeProtocol {
         return $0
     } (UITextField())
     
-    let loginButton: UIButton = {
-        $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.backgroundColor = .black
-        $0.setTitle("Login", for: .normal)
-        $0.setTitleColor(.white, for: .normal)
-        return $0
-    } (UIButton())
+    let loginButton: DefaultButton = {
+        let button = DefaultButton(title: "Login")
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    } ()
     
     let signupButton: UIButton = {
         $0.translatesAutoresizingMaskIntoConstraints = false
