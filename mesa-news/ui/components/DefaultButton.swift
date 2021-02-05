@@ -98,7 +98,7 @@ extension DefaultButton {
     }
     
     @objc private func buttonTapped() {
-        button.animateAlpha()
+        button.clickAnimation()
         onTouch?()
     }
     
